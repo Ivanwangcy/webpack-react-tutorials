@@ -1,0 +1,25 @@
+{
+  "name": "webpack-tutorials",
+  "version": "1.0.0",
+  "description": "webpack package dependence",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivanwangcy/webpack-tutorials.git"
+  },
+  "keywords": [
+    "webpack",
+    "react",
+    "jsx",
+    "module"
+  ],
+  "author": "Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivanwangcy/webpack-tutorials/issues"
+  },
+  "homepage": "https://github.com/Ivanwangcy/webpack-tutorials#readme"
+}
