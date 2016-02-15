@@ -8,12 +8,24 @@ module.exports = {
   //   filename: '[name].js'
   // }
 
-  // 多个文件合并打包 
+  // 多个文件合并打包
   entry: [
     './entry1.js',
     './entry2.js'
   ],
   output: {
     filename: 'bundle.js'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_modules)/,
+        loader: 'babel?presets[]=es2015'
+        // query: {
+        //   presets: ['es2015']
+        // }
+      }
+    ]
   }
 };
