@@ -7,7 +7,7 @@ module.exports = {
     loaders: [
       {
         test:/\.css$/,
-        loader: "style!css"
+        loader: "style!css" // 用!去链式调用loader
       }
     ]
   }
