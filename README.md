@@ -1,2 +1,2 @@
-# webpack-tutorials
-webpack tutorials 练习代码
+# webpack-react-tutorials
+webpack和react tutorials 练习代码
