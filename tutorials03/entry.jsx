@@ -7,7 +7,9 @@ var ReactDOM = require('react-dom');
 //      );
 var Hello = React.createClass({
   render: function() {
-    return <div>Hello {this.props.name}</div>;
+
+    // 定义类需要使用 className
+    return <div id="content" className="hello">Hello {this.props.name}</div>;
   }
 });
 
