@@ -12,8 +12,18 @@ var Hello = React.createClass({
     return <div id="content" className="hello">Hello {this.props.name}</div>;
   }
 });
+var CommentBox = React.createClass({
+  render: function() {
+    <div>
+      CommentBox
+    </div>
+  }
+});
 
 ReactDOM.render(
-  <Hello name="World" />,
+  <div>
+    <Hello name="World" />
+    <CommentBox />
+  </div>,
   document.getElementById('container')
 );
