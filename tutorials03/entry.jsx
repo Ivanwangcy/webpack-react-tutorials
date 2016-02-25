@@ -15,7 +15,7 @@ var Hello = React.createClass({
 var CommentBox = React.createClass({
   render: function() {
     <div>
-      CommentBox
+      CommentBox content
     </div>
   }
 });
