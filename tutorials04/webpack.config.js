@@ -1,14 +1,18 @@
 module.exports = {
-  entry: "./entry.jsx",
+  entry: './entry.jsx',
   output: {
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
         test: /\.js[x]?$/,
         exclude: /node_modules/,
-        loader: "babel-loader?presets[]=es2015&presets[]=react"
+        loader: 'babel-loader?presets[]=es2015&presets[]=react'
+      },
+      {
+        test:/\.css$/,
+        loader: 'style!css' // 用!去链式调用loader
       }
     ]
   }
