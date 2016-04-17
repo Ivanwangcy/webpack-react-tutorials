@@ -14,3 +14,7 @@ ReactDOM.render(
   <Hello />,
   document.getElementById("container")
 );
+
+if (__DEV__) {
+  document.write(new Date());
+}

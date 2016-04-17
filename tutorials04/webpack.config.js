@@ -1,7 +1,9 @@
 var webpack = require('webpack');
 
 var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
-
+var devFlagPlugin = new webpack.DefinePlugin({
+  __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
+})
 module.exports = {
   entry: './entry.jsx',
   output: {
@@ -12,7 +14,8 @@ module.exports = {
       compress: {
         warnings: false
       }
-    })
+    }),
+    devFlagPlugin
   ],
   module: {
     loaders: [
