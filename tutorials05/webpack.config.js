@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 module.exports = {
   entry: './entry.js',
   output: {
@@ -11,5 +13,8 @@ module.exports = {
         loader: 'babel'
       }
     ]
-  }
+  },
+  plugins: [
+    new CommonsChunkPlugin('init.js')
+  ]
 };
