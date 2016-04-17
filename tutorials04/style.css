@@ -1,6 +1,11 @@
 .content{
-  background-color: magenta;
   width: 100vw;
   height: 100vh;
-  background-image: url();
+  background: url(REACT.png) no-repeat magenta;
+}
+.icon{
+  background-image: url(1.png);
+  width: 48px;
+  height: 48px;
+  display: inline-block;
 }

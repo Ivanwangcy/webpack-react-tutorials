@@ -13,6 +13,10 @@ module.exports = {
       {
         test:/\.css$/,
         loader: 'style!css' // 用!去链式调用loader
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url?limit=8192'
       }
     ]
   }
