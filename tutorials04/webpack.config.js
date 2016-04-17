@@ -31,6 +31,7 @@ module.exports = {
       {
         test: /\.(png|jpg)$/,
         loader: 'url?limit=8192&name=images/[hash:6].[ext]'
+        // loader: 'url?limit=192&name=http:xxx//images/icon/[name].[ext]'
       }
     ]
   }

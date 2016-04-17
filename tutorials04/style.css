@@ -3,6 +3,12 @@
   height: 100vh;
   background: url(REACT.png) no-repeat magenta;
 }
+/*.remote-icon{
+  background: url(location-eye@2x.png);
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}*/
 .icon{
   background-image: url(1.png);
   width: 48px;
