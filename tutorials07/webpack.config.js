@@ -19,7 +19,11 @@ module.exports = {
       title: 'Hello World webpack app',
       filename: 'index.html',
       template: htmlTemplatePath,
-      inject: false
+      inject: false,
+      minify: {
+        html5: true,
+        collapseWhitespace: true
+      }
     })
   ]
 };
