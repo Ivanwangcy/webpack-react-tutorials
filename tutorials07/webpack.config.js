@@ -6,7 +6,6 @@ var ROOT_PATH = path.resolve(__dirname);
 var APP_PATH = path.resolve(ROOT_PATH, 'src');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 var htmlTemplatePath = path.resolve(ROOT_PATH, 'src', 'assets', 'templates', 'index-template.ejs');
-console.log(htmlTemplatePath);
 
 module.exports = {
   entry: APP_PATH,
@@ -19,9 +18,8 @@ module.exports = {
     new htmlWebpackPlugin({
       title: "Hello World webpack app",
       filename: 'index.html',
-      // template: './src/template.ejs',
       template: htmlTemplatePath,
-      inject: true
+      inject: false
     })
   ]
 };
