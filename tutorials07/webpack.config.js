@@ -16,7 +16,7 @@ module.exports = {
   // 添加生成HTML文件的插件
   plugins: [
     new htmlWebpackPlugin({
-      title: "Hello World webpack app",
+      title: 'Hello World webpack app',
       filename: 'index.html',
       template: htmlTemplatePath,
       inject: false
