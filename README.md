@@ -12,3 +12,4 @@ $ npm install --global webpack-dev-server
 * [wbpack tutorials 04 图片打包，小于8192 转换base64](./tutorials04/webpack.config.js)
 * [wbpack tutorials 05 使用bundle-loader延迟加载其他模块](./tutorials05/webpack.config.js)
 * [wbpack tutorials 06 使用ES6语法创建React对象, 热部署自动加载模块](./tutorials06/webpack.config.js)
+* [wbpack tutorials 07 html-webpack-plugin插件使用](./tutorials07/webpack.config.js)
