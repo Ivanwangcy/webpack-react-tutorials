@@ -10,7 +10,7 @@ ReactDOM.render(
   </div>,
   document.querySelector(".header")
 );
-
+// 使用require.ensure 加载模块
 // require.ensure(['./module/list'], function(require){
 //   var ListView = require('./module/list').default;
 //   ReactDOM.render(
@@ -19,7 +19,7 @@ ReactDOM.render(
 //   );
 // })
 
-// 使用 bundle-loader 更简洁
+// 使用 bundle-loader 更简洁，替代require.ensure 
 var load = require('bundle-loader!./module/list');
 
 load(function(file){
