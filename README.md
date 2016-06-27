@@ -13,3 +13,18 @@ $ npm install --global webpack-dev-server
 * [wbpack tutorials 05 使用bundle-loader延迟加载其他模块](./tutorials05/webpack.config.js)
 * [wbpack tutorials 06 使用ES6语法创建React对象, 热部署自动加载模块](./tutorials06/webpack.config.js)
 * [wbpack tutorials 07 html-webpack-plugin插件使用](./tutorials07/webpack.config.js)
+
+## [wbpack tutorials 08 使用 `hjs-webpack` 简化 webpack.config.js 配置项](./tutorials07/webpack.config.js)
+hjs-webpack 安装与部署：
+```sh
+$ npm i -D hjs-webpack {css,style,postcss}-loader
+# 打包
+$ webpack # 与使用 webpack 一样
+
+# 启动测试服务器 本地安装
+$ ./node_modules/.bin/hjs-dev-server
+
+# 全局安装
+$ npm i -g hjs-webpack
+$ hjs-dev-server # 启动服务器 默认端口 3000
+```
