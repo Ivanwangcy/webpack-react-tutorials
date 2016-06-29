@@ -26,5 +26,5 @@ $ ./node_modules/.bin/hjs-dev-server
 
 # 全局安装
 $ npm i -g hjs-webpack
-$ hjs-dev-server # 启动服务器 默认端口 3000
+$ NODE_ENV=development hjs-dev-server # 启动服务器 默认端口 3000
 ```
