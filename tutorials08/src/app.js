@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+
+// 可以使用箭头函数创建无状态组件
 // let App = () => {
 //   return (
 //     <div>
