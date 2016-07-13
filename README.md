@@ -14,7 +14,7 @@ $ npm install --global webpack-dev-server
 * [wbpack tutorials 06 使用ES6语法创建React对象, 热部署自动加载模块](./tutorials06/webpack.config.js)
 * [wbpack tutorials 07 html-webpack-plugin插件使用](./tutorials07/webpack.config.js)
 
-## [wbpack tutorials 08 使用 `hjs-webpack` 简化 webpack.config.js 配置项](./tutorials07/webpack.config.js)
+## [webpack tutorials 08 使用 `hjs-webpack` 简化 webpack.config.js 配置项](./tutorials07/webpack.config.js)
 hjs-webpack 安装与部署：
 ```sh
 $ npm i -D hjs-webpack {css,style,postcss}-loader
@@ -28,3 +28,4 @@ $ ./node_modules/.bin/hjs-dev-server
 $ npm i -g hjs-webpack
 $ NODE_ENV=development hjs-dev-server # 启动服务器 默认端口 3000
 ```
+## [webpack tutorials 09]()
