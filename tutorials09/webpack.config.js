@@ -1,31 +1,33 @@
 var path = require('path');
-var getConfig = require('hjs-webpack');
+var webpack = require('webpack');
 
 var NODE_ENV = process.env.NODE_ENV;
-console.log(getConfig());
-module.exports = getConfig({
+
+module.exports = {
   devtool: 'cheap-module-eval-source-map',
-  in: [
+  entry: [
     'webpack-hot-middleware/client',
     './index'
   ],
-  out: {
+  output: {
     path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
     publicPath: '/static'
   },
   clearBeforeBuild: true,
   isDev: true,
-  // devServer: {
-  //   // port, // pulled from top level option "port"
-  //   hostname: '0.0.0.0', // // pulled from top level option "hostname"
-  //   historyApiFallback: true,
-  //   hot: true,
-  //   inline: true,
-  //   compress: true, // enable express compression to faster index reload (default: false)
-  //   // The following options are for webpack-dev-middleware
-  //   noInfo: true,
-  //   quiet: false,
-  //   lazy: false,
-  //   // publicPath // pulled from top level option "output.publicPath"
-  // }
-});
+  plugins: [
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        exclude: /node-modules/,
+        include: __dirname
+      }
+    ]
+  }
+};
