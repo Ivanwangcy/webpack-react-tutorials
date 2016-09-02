@@ -4,11 +4,11 @@ import { createStore } from 'redux';
 import Counter from './components/Counter';
 import counter from './reducers';
 
-class Counter extends React.Component {
-  render(){
-    return <div>Hello World</div>
-  }
-}
+// class Counter extends React.Component {
+//   render(){
+//     return <div>Hello World</div>
+//   }
+// }
 
 var store = createStore(counter);
 var rootEl = document.getElementById('root');
@@ -25,3 +25,5 @@ function render(){
 }
 
 render();
+
+store.subscribe(render);

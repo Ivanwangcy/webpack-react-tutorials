@@ -5,6 +5,8 @@ class Counter extends Component {
   constructor(props){
     super(props);
 
+    this.incrementIfOdd = this.incrementIfOdd.bind(this);
+    this.incrementAsync = this.incrementAsync.bind(this);
   }
 
   incrementIfOdd(){
@@ -13,7 +15,7 @@ class Counter extends Component {
     }
   }
 
-  incrementSync(){
+  incrementAsync(){
     setTimeout(
       this.props.onIncrement
     , 1000);
