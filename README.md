@@ -4,7 +4,8 @@ webpack和react tutorials 练习代码
 
 可以安装webpack-dev-server来测代码。
 ```bash
-$ npm install --global webpack-dev-server
+$ npm install --save-dev webpack@latest webpack-dev-server@latest babel-core babel-loader babel-preset-{es2015,react,stage-0}
+$ npm install --save-dev {css,style,url,file}-loader
 ```
 * [wbpack tutorials 01 打包js文件和css文件配置文件](./tutorials01/webpack.config.js)
 * [wbpack tutorials 02 多js文件打包合并，ES6转换](./tutorials02/webpack.config.js)
